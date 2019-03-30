@@ -6,9 +6,11 @@ public class main {
 		
 		
 		Rotu kaapio = new Rotu("Kääpiö", 3, 1, 2);
-		Rotu haltia = new Rotu("Haltia", 1, 3, 2);
-		Luokka maagi = new Luokka("Maagi", 0, 0, 2);
+		Rotu haltia = new Rotu("Haltia", 1, 2, 3);
+		Rotu ihminen = new Rotu("Ihminen", 2, 3, 1);
+		Luokka velho = new Luokka("Velho", 0, 0, 2);
 		Luokka varas = new Luokka("Varas", 0, 2, 0);
+		Luokka soturi = new Luokka("Soturi", 2, 0, 0);
 		
 		tulosta("Luo hahmo");
 		Rotu rotu = null;
@@ -16,6 +18,7 @@ public class main {
 			tulosta("Valitse rotu");
 			tulosta("(1) Kääpiö");
 			tulosta("(2) Haltia");
+			tulosta("(3) Ihminen");
 			tulosta("(9) Tulosta rotutiedot");
 			
 			int syote = Integer.parseInt(lukija.nextLine());
@@ -29,9 +32,14 @@ public class main {
 					rotu = haltia;
 					tulosta("\n=========================\n");
 					break;
+				case 3:
+					rotu = ihminen;
+					tulosta("\n=========================\n");
+					break;
 				case 9:
 					kaapio.tulostaTiedot();
 					haltia.tulostaTiedot();
+					ihminen.tulostaTiedot();
 					break;
 				default:
 					tulosta("Virheellinen syöte");
@@ -42,24 +50,30 @@ public class main {
 		while(luokka == null) {
 			
 			tulosta("Valitse luokka");
-			tulosta("(1) Maagi");
+			tulosta("(1) Velho");
 			tulosta("(2) Varas");
+			tulosta("(3) Soturi");
 			tulosta("(9) Tulosta luokkatiedot");
 			
 			int syote2 = Integer.parseInt(lukija.nextLine());
 			
 			switch(syote2) {
 				case 1:
-					luokka = maagi;;
+					luokka = velho;;
 					tulosta("\n=========================\n");
 					break;
 				case 2:
 					luokka = varas;
 					tulosta("\n=========================\n");
 					break;
+				case 3:
+					luokka = soturi;
+					tulosta("\n=========================\n");
+					break;
 				case 9:
-					maagi.tulostaTiedot();
+					velho.tulostaTiedot();
 					varas.tulostaTiedot();
+					soturi.tulostaTiedot();
 					break;
 				default:
 					tulosta("Virheellinen syöte");
@@ -79,7 +93,7 @@ public class main {
 			tulosta("(2) Kehitä nopeutta");
 			tulosta("(3) Kehitä taikaa");
 			tulosta("(9) Tulosta hahmontiedot ja lopeta");
-			tulosta("(69) Lopeta");
+			
 		
 			int x = Integer.parseInt(lukija.nextLine());
 			switch (x) {
