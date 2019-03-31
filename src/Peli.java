@@ -19,16 +19,17 @@ public class Peli {
 		
 		
 		
-		tulosta("Luo hahmo");
+		
 		Rotu rotu = null;
 		while(rotu == null) {
 			tulosta("=========================\n");
+			tulosta("Valitse rotu");
 			for(int i = 0; i < listat.rodut().size(); i ++) {
 				tulosta("(" + (i+1) + ") " + listat.rodut().get(i).returnNimi());
 			}
 			tulosta("(10) Tulosta rotutiedot");
 			int valinta = Integer.parseInt(lukija.nextLine());
-			if(valinta > 0 && valinta < listat.rodut().size()) {
+			if(valinta > 0 && valinta <= listat.rodut().size()) {
 				rotu = listat.rodut().get(valinta - 1);
 			} else if(valinta == 10) {
 				for(int i = 0; i < listat.rodut().size(); i ++) {
@@ -40,17 +41,18 @@ public class Peli {
 			
 			
 		}
-			
+		
 		Luokka luokka = null;
 		while(luokka == null) {
 			tulosta("=========================\n");
+			tulosta("Valitse Luokka");
 					for(int i = 0; i < listat.luokat().size(); i ++) {
 					tulosta("(" + (i+1) + ") " + listat.luokat().get(i).returnNimi());
 					
 				}
 				tulosta("(10) Tulosta Luokkatiedot");
 				int valinta = Integer.parseInt(lukija.nextLine());
-				if(valinta > 0 && valinta < listat.luokat().size()) {
+				if(valinta > 0 && valinta <= listat.luokat().size()) {
 					luokka = listat.luokat().get(valinta - 1);
 				} else if(valinta == 10) {
 					for(int i = 0; i < listat.luokat().size(); i ++) {
