@@ -1,0 +1,3 @@
+Velho;0;0;2
+Varas;0;2;0
+Soturi;2;0;0

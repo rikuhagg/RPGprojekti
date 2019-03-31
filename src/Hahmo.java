@@ -1,3 +1,4 @@
+import java.util.*;
 
 public class Hahmo {
 	private String nimi;
@@ -31,7 +32,6 @@ public class Hahmo {
 		tulosta("Voima: " + voima);
 		tulosta("Nopeus: " + nopeus);
 		tulosta("Taika: " + taika);
-		tulosta("\n=========================");
 	}
 	
 	public void kehitaVoimaa(int x) {
@@ -45,8 +45,7 @@ public class Hahmo {
 	public void kehitaNopeutta(int x) {
 		nopeus += x;
 	}
-	
-	
+		
 	
 	public void tulosta(String lause) {
 		System.out.println(lause);

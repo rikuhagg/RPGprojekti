@@ -34,7 +34,6 @@ public class Luokka {
 		t("Voima: +" + voima);
 		t("Nopeus: +" + nopeus);
 		t("Taika: +" + taika + "\n");
-		t("=========================\n");
 	}
 	
 	public void t(String lause) {
