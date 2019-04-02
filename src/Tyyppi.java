@@ -1,11 +1,13 @@
 
-public class Luokka {
+public class Tyyppi {
+	private String tyyppi;
 	private String nimi;
 	private int voima;
 	private int nopeus;
 	private int taika;
 	
-	public Luokka(String nimi, int voima, int nopeus, int taika) {
+	public Tyyppi(String tyyppi, String nimi, int voima, int nopeus, int taika) {
+		this.tyyppi = tyyppi;
 		this.nimi = nimi;
 		this.voima = voima;
 		this.nopeus = nopeus;
@@ -29,14 +31,14 @@ public class Luokka {
 	}
 	
 	public void tulostaTiedot() {
-		t("=========================\n");
-		t("Rotu: " + nimi);
-		t("Voima: +" + voima);
-		t("Nopeus: +" + nopeus);
-		t("Taika: +" + taika + "\n");
+		tulosta("=========================\n");
+		tulosta(tyyppi + ": " + nimi);
+		tulosta("Voima: +" + voima);
+		tulosta("Nopeus: +" + nopeus);
+		tulosta("Taika: +" + taika + "\n");
 	}
 	
-	public void t(String lause) {
+	public void tulosta(String lause) {
 		System.out.println(lause);
 	}
 }

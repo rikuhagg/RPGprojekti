@@ -1,4 +1,4 @@
-Velho;0;0;2
-Varas;0;2;0
-Soturi;2;0;0
-Hakkeri;10;10;10 	
+Luokka;Velho;0;0;2
+Luokka;Varas;0;2;0
+Luokka;Soturi;2;0;0
+Luokka;Hakkeri;1;1;2

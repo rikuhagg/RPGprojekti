@@ -4,63 +4,36 @@ import java.util.*;
 import java.io.*;
 
 public class Lista {
-	private ArrayList<Rotu> rodut;
-	private ArrayList<Luokka> luokat;
+	private ArrayList<Tyyppi> lista;
+	private String tiedosto;
 	
 	
 	
-	public Lista()  {
-		this.rodut= new ArrayList<>();
-		this.luokat = new ArrayList<>();
+	public Lista(String tiedosto) throws FileNotFoundException  {
+		this.lista = new ArrayList<>();
+		this.tiedosto = tiedosto;
 		
-	}
-	
-	
-	public void luoRotuLista(String tiedosto) throws FileNotFoundException {
 		Scanner lukija = new Scanner(new File(tiedosto));
-		ArrayList<String> rot = new ArrayList<>();
+		ArrayList<String> rivit = new ArrayList<>();
 		while(lukija.hasNext()) {
-			rot.add(lukija.nextLine());
+			rivit.add(lukija.nextLine());
 		}
 		lukija.close();
-		System.out.println(rot.get(0));
 		
 		try {
-			rot.stream()
+			rivit.stream()
 				.map(rivi -> rivi.split(";"))
-				.map(palat -> new Rotu(palat[0],Integer.parseInt(palat[1]),Integer.parseInt(palat[2]),Integer.parseInt(palat[3])))
-				.forEach(rotu -> rodut.add(rotu));		
+				.map(palat -> new Tyyppi(palat[0],palat[1],Integer.parseInt(palat[2]),Integer.parseInt(palat[3]),Integer.parseInt(palat[4])))
+				.forEach(rotu -> lista.add(rotu));		
 		} catch (Exception e) {
 			
 		}
-	}
-	
-	public void luoLuokkaLista(String tiedosto) throws FileNotFoundException {
-		Scanner lukija = new Scanner(new File(tiedosto));
-		ArrayList<String> luok = new ArrayList<>();
-		while(lukija.hasNext()) {
-			luok.add(lukija.nextLine());
-		}
-		lukija.close();
-		System.out.println(luok.get(0));
 		
-		try {
-			luok.stream()
-				.map(rivi -> rivi.split(";"))
-				.map(palat -> new Luokka(palat[0],Integer.parseInt(palat[1]),Integer.parseInt(palat[2]),Integer.parseInt(palat[3])))
-				.forEach(luokka -> luokat.add(luokka));		
-		} catch (Exception e) {
-			
-		}
 	}
 	
 	
-	public ArrayList<Rotu> rodut() {
-		return rodut;
-	}
-	
-	public ArrayList<Luokka> luokat() {
-		return luokat;
+	public ArrayList<Tyyppi> returnLista() {
+		return lista;
 	}
 	
 }
