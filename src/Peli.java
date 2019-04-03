@@ -26,6 +26,7 @@ public class Peli {
 			tulosta("(1) Kehitä voimaa");
 			tulosta("(2) Kehitä nopeutta");
 			tulosta("(3) Kehitä taikaa");
+			tulosta("(4) Avaa LootBox");
 			tulosta("(9) Tulosta hahmontiedot");
 			tulosta("(69) lopeta");
 			
@@ -40,6 +41,11 @@ public class Peli {
 					break;
 				case "3":
 					hahmo.kehitaTaikaa(1);
+					break;
+				case "4":
+					LootBox box = new LootBox("Esineet.txt");
+					box.arvoBoxi();
+					box.tulostaBoxi();
 					break;
 				case "9":
 					hahmo.tulostaHahmo();

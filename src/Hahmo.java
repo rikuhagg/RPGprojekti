@@ -58,11 +58,11 @@ public class Hahmo {
 		
 		while(this.luokka == null) {
 			tulosta("=========================\n");
-			tulosta("Valitse rotu");
+			tulosta("Valitse luokka");
 			for(int i = 0; i < luokat.returnLista().size(); i ++) {
 				tulosta("(" + (i+1) + ") " + luokat.returnLista().get(i).returnNimi());
 			}
-			tulosta("(10) Tulosta rotutiedot");
+			tulosta("(10) Tulosta luokkatiedot");
 			int valinta = Integer.parseInt(lukija.nextLine());
 			if(valinta > 0 && valinta <= luokat.returnLista().size()) {
 				luokka = luokat.returnLista().get(valinta - 1);
