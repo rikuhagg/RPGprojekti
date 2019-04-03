@@ -19,4 +19,16 @@ public class Esine {
 		System.out.println("Nopeus: +" + nopeus);
 		System.out.println("Taika: +" + taika + "\n");
 	}
+	
+	public int taika() {
+		return taika;
+	}
+	
+	public int voima() {
+		return voima;
+	}
+	
+	public int nopeus() {
+		return nopeus;
+	}
 }

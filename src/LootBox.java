@@ -44,6 +44,10 @@ public class LootBox {
 		arvotut[2].tulostaEsine();
 	}
 	
+	public Esine palautaEsine(int i) {
+		return arvotut[i];
+	}
+	
 	
 	private void tulosta(String lause) {
 		System.out.println(lause);
