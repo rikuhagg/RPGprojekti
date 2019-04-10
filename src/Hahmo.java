@@ -10,6 +10,10 @@ public class Hahmo {
 	private int hp;
 	private int maxHp;
 	private int rahat;
+	private int lvl;
+	private int xp;
+	private int maxXp;
+	private int kokemus;
 	private Esine[] esineet;
 	private Tyyppi luokka;
 	private Tyyppi rotu;
@@ -25,6 +29,10 @@ public class Hahmo {
 		this.taika = 0;
 		this.hp = 10;
 		this.maxHp = 10;
+		this.lvl = 1;
+		this.xp = 0;
+		this. maxXp = 1000;
+		this.kokemus = 0;
 		this.esineet = new Esine[5];
 		
 	}
@@ -54,6 +62,8 @@ public class Hahmo {
 			}
 		}
 	}
+	
+	
 	
 	public void valitseLuokka(String tiedosto) throws FileNotFoundException {
 		Lista luokat = new Lista(tiedosto);
@@ -90,6 +100,7 @@ public class Hahmo {
 	public void tulostaHahmo() {
 		tulosta("=========================\n");
 		tulosta("Nimi: " + nimi);
+		tulosta("Lvl: " + lvl + "   " + xp + "/" + (maxXp));
 		tulosta("Rotu: " + rotu.returnNimi());
 		tulosta("Luokka: " + luokka.returnNimi());
 		tulosta("Voima: " + voima);
@@ -97,24 +108,39 @@ public class Hahmo {
 		tulosta("Taika: " + taika);
 	}
 	
-	public void kehitaVoimaa(int x) {
-		voima += x;
+	
+	public void kehity() {
+		lvl += 1;
+		maxXp += 250;
 	}
 	
-	public int getVoima() {
-		return voima;
+	public void saaXp(int x) {
+		xp = xp + x;
+		
+		while(true) {
+			if(xp > maxXp) {
+				this.kehity();
+				xp = xp - maxXp;
+			} else {
+				break;
+			}
+		}
+	}
+	
+	public void kehitaVoimaa(int x) {
+		voima += x;
 	}
 	
 	public void kehitaTaikaa(int x) {
 		taika += x;
 	}
 	
-	public int getTaika() {
-		return taika;
-	}
-	
 	public void kehitaNopeutta(int x) {
 		nopeus += x;
+	}
+	
+	public void kehitaHp(int x) {
+		maxHp += x;
 	}
 	public String getRotu() {
 		return rotu.returnNimi();
@@ -122,6 +148,14 @@ public class Hahmo {
 	
 	public String getLuokka() {
 		return luokka.returnNimi();
+	}
+	
+	public int getVoima() {
+		return voima;
+	}
+	
+	public int getTaika() {
+		return taika;
 	}
 	
 	public int getNopeus() {
@@ -140,7 +174,12 @@ public class Hahmo {
 		return rahat;
 	}
 	
-	public void rahat(int x) {
+	public void saaRahaa(int x) {
+		rahat += x;
+	}
+	
+	public void kulutaRahaa(int x) {
+		rahat -= x;
 	}
 	
 	public String getNimi() {
@@ -163,11 +202,8 @@ public class Hahmo {
 		}
 	}
 	
-		
-	
 	public void tulosta(String lause) {
 		System.out.println(lause);
 	}
-	
 	
 }
