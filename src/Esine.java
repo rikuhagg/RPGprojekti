@@ -20,15 +20,15 @@ public class Esine {
 		System.out.println("Taika: +" + taika + "\n");
 	}
 	
-	public int taika() {
+	public int getTaika() {
 		return taika;
 	}
 	
-	public int voima() {
+	public int getVoima() {
 		return voima;
 	}
 	
-	public int nopeus() {
+	public int getNopeus() {
 		return nopeus;
 	}
 }

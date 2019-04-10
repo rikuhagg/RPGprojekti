@@ -2,3 +2,4 @@ Luokka;Velho;0;0;2
 Luokka;Varas;0;2;0
 Luokka;Soturi;2;0;0
 Luokka;Hakkeri;1;1;2
+Luokka;Metsästäjä;1;1;1

@@ -7,9 +7,9 @@ public class Hahmo {
 	private int voima;
 	private int nopeus;
 	private int taika;
-	private int puolustus;
-	private int hyökkäys;
 	private int hp;
+	private int maxHp;
+	private int rahat;
 	private Esine[] esineet;
 	private Tyyppi luokka;
 	private Tyyppi rotu;
@@ -23,6 +23,8 @@ public class Hahmo {
 		this.voima = 0;
 		this.nopeus = 0;
 		this.taika = 0;
+		this.hp = 10;
+		this.maxHp = 10;
 		this.esineet = new Esine[5];
 		
 	}
@@ -99,17 +101,73 @@ public class Hahmo {
 		voima += x;
 	}
 	
+	public int getVoima() {
+		return voima;
+	}
+	
 	public void kehitaTaikaa(int x) {
 		taika += x;
+	}
+	
+	public int getTaika() {
+		return taika;
 	}
 	
 	public void kehitaNopeutta(int x) {
 		nopeus += x;
 	}
+	public String getRotu() {
+		return rotu.returnNimi();
+	}
+	
+	public String getLuokka() {
+		return luokka.returnNimi();
+	}
+	
+	public int getNopeus() {
+		return nopeus;
+	}
+	
+	public int getHp() {
+		return hp;
+	}
+	
+	public int getMaxHp() {
+		return maxHp;
+	}
+	
+	public int getRahat() {
+		return rahat;
+	}
+	
+	public void rahat(int x) {
+	}
+	
+	public String getNimi() {
+		return nimi;
+	}
+	
+	public void otaVahinkoa(int vahinko) {
+		if(vahinko > hp) {
+			hp = 0;
+		} else {
+			hp = hp - vahinko;
+		}
+	}
+	
+	public void paranna(int parannus) {
+		if (hp + parannus > maxHp) {
+			hp = maxHp; 
+		} else {
+			hp = hp + parannus;
+		}
+	}
+	
 		
 	
 	public void tulosta(String lause) {
 		System.out.println(lause);
 	}
+	
 	
 }
