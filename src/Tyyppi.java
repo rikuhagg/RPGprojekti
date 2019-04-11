@@ -41,4 +41,8 @@ public class Tyyppi {
 	public void tulosta(String lause) {
 		System.out.println(lause);
 	}
+	
+	public String toString() {
+		return this.nimi;
+	}
 }

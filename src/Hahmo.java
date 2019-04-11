@@ -41,7 +41,7 @@ public class Hahmo {
 		Lista rodut = new Lista(tiedosto);
 		
 		while(this.rotu == null) {
-			tulosta("=========================\n");
+			tulosta("============================================\n");
 			tulosta("Valitse rotu");
 			for(int i = 0; i < rodut.returnLista().size(); i ++) {
 				tulosta("(" + (i+1) + ") " + rodut.returnLista().get(i).returnNimi());
@@ -61,6 +61,7 @@ public class Hahmo {
 				tulosta("virheellinen syöte");
 			}
 		}
+		tulosta("============================================\n");
 	}
 	
 	
@@ -69,7 +70,7 @@ public class Hahmo {
 		Lista luokat = new Lista(tiedosto);
 		
 		while(this.luokka == null) {
-			tulosta("=========================\n");
+			tulosta("============================================\n");
 			tulosta("Valitse luokka");
 			for(int i = 0; i < luokat.returnLista().size(); i ++) {
 				tulosta("(" + (i+1) + ") " + luokat.returnLista().get(i).returnNimi());
@@ -89,16 +90,18 @@ public class Hahmo {
 				tulosta("virheellinen syöte");
 			}
 		}
+		tulosta("============================================\n");
 	}
 	
 	public void valitseNimi() {
-		tulosta("=========================\n");
+		tulosta("============================================\n");
 		tulosta("Nimeä hahmo: ");
 		this.nimi = lukija.nextLine();
+		tulosta("============================================\n");
 	}
 	
 	public void tulostaHahmo() {
-		tulosta("=========================\n");
+		tulosta("============================================\n");
 		tulosta("Nimi: " + nimi);
 		tulosta("Lvl: " + lvl + "   " + xp + "/" + (maxXp));
 		tulosta("Rotu: " + rotu.returnNimi());
@@ -106,6 +109,7 @@ public class Hahmo {
 		tulosta("Voima: " + voima);
 		tulosta("Nopeus: " + nopeus);
 		tulosta("Taika: " + taika);
+		tulosta("============================================\n");
 	}
 	
 	

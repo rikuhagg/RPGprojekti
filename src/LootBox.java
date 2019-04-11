@@ -37,11 +37,12 @@ public class LootBox {
 	}
 	
 	public void tulostaBoxi() {
-		tulosta("\n=========================\n");
+		tulosta("\n============================================\n");
 		tulosta("Onneksi Olkoon! Voitit seuraavat esineet: \n");
 		arvotut[0].tulostaEsine();
 		arvotut[1].tulostaEsine();
 		arvotut[2].tulostaEsine();
+		tulosta("\n============================================\n");
 	}
 	
 	public Esine palautaEsine(int i) {
