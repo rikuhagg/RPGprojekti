@@ -60,17 +60,19 @@ public class Peli {
 		lukija.nextLine();
 		tulosta("”Hya hya, vai että " +  hahmo.getNimi() +"! \n"
 				+ "Hei, ny ku mä katon sua vähän tarkemmin… \n"
-				+ "Roknarin pyhän takkuisen parran kautta… sähän oot…”");
+				+ "Roknarin pyhän takkuisen parran kautta… sähän oot…”\n");
 		
 		hahmo.valitseRotu("rodut.txt");
 		
-		tulosta("”Sähän oot " + hahmo.getRotu() + "”");
+		tulosta("”Sähän oot " + hahmo.getRotu() + "!”");
 		tulosta("Kääpiö hiljenee vähäksi aikaa, mutta avaa taas suunsa ennen pitkää:\n"
 				+ "”No " + hahmo.getNimi() + ", mistä jäit kii? Kuka vasikoi? \n"
 				+ "Onks vasikalla kirves nii syvällä päässä, et ainoastaan joku legendaarinen sankari voi repiä sen irti? \n"
 				+ "Mä oon EDELLEEN POLIITTINEN VANKI… mut entäs sä?”\n");
 		
 		hahmo.valitseLuokka("luokat.txt");
+		tulosta("”Olet " + hahmo.getLuokka() + "!”");
+		
 		int i = 0;
 		while(i == 0) {
 			tulosta("(1) Avaa lootBox\n"
