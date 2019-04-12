@@ -1,0 +1,21 @@
+Kauppa
+-raha
+
+Lvl
+-xp
+
+kalastus
+puunhakkaus
+metsästys
+
+Cräfting?
+
+Taistelu
+- Pokemon Style
+	- valitse isku
+- HP
+	- Potionit?
+
+Easter Egg
+
+

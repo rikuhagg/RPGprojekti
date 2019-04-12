@@ -1,3 +1,4 @@
 Rotu;Kääpiö;3;1;2
 Rotu;Haltia;1;2;3
 Rotu;Ihminen;2;3;1
+Rotu;Saatana;666;666;666

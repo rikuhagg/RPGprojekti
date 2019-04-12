@@ -64,7 +64,11 @@ public class Hahmo {
 		tulosta("============================================\n");
 	}
 	
-	
+	public void luoAuto() {
+		rotu = new Tyyppi("Rotu","Testi",1,1,1);
+		luokka = new Tyyppi("Luokka","Testi",0,0,0);
+		nimi = "Nimi";
+	}
 	
 	public void valitseLuokka(String tiedosto) throws FileNotFoundException {
 		Lista luokat = new Lista(tiedosto);
@@ -188,6 +192,18 @@ public class Hahmo {
 	
 	public String getNimi() {
 		return nimi;
+	}
+	
+	public int getXp() {
+		return xp;
+	}
+	
+	public int getMaxXp() {
+		return maxXp;
+	}
+	
+	public int getLvl() {
+		return lvl;
 	}
 	
 	public void otaVahinkoa(int vahinko) {

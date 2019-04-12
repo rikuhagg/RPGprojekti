@@ -10,6 +10,60 @@ public class Peli {
 	
 
 	public static void main(String[] args) throws FileNotFoundException {
+		tulosta("Aloita peli painamalla ENTER");
+		String x = lukija.nextLine();
+		switch (x) {
+			case "testaa":
+				tulosta("toimii");
+				Hahmo testi = new Hahmo();
+				testi.luoAuto();
+				testi.tulostaHahmo();
+				int j = 0;
+				while(j == 0) {
+				tulosta("1 anna XP \n"
+						+ "2 tulosta hahmo \n"
+						+ "3 avaa lootbox \n"
+						+ "10 lopeta");
+				String y = lukija.nextLine();
+				switch(y) {
+					case "1":
+						tulosta("Lvl: " + testi.getLvl() + " " + testi.getXp() + "/" + testi.getMaxXp() 
+						+ "\n Kuinka paljon Xp?");
+						int z = lukija.nextInt();
+						testi.saaXp(z);
+						break;
+					case "2":
+						testi.tulostaHahmo();
+						break;
+					case "3":
+						LootBox b = new LootBox("Esineet.txt");
+						b.arvoBoxi();
+						b.tulostaBoxi();
+						break;
+					case "10":
+						j = 1;
+						break;
+					default:
+						tulosta("väärä syöte");
+				}
+				}
+				
+				
+				
+				
+				
+				
+				
+				
+				break;
+				
+				default:
+				
+				
+
+		
+		
+		
 		Hahmo hahmo = new Hahmo();
 		tulosta("Askarta. \n");
 		tulosta("Tämä läntinen maanosa tunnetaan sen lukuisista vuorista ja mainiosta vuohenjuustosta, \n"
@@ -94,12 +148,11 @@ public class Peli {
 		}
 		tulosta("THE END....");
 		
-		
+		}	
 	}
 	
 	public static void tulosta(String lause) {
 		System.out.println(lause);
 	}
-	
 	
 }
