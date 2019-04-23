@@ -33,7 +33,7 @@ public class Lista {
 	
 	
 	public ArrayList<Tyyppi> returnLista() {
+		
 		return lista;
 	}
-	
 }

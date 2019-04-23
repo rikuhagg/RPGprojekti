@@ -10,6 +10,9 @@ public class Peli {
 	
 
 	public static void main(String[] args) throws FileNotFoundException {
+		
+		ArrayList<String> tarina = lueTiedosto("tarina.txt");
+		
 		tulosta("Aloita peli painamalla ENTER");
 		String x = lukija.nextLine();
 		switch (x) {
@@ -23,6 +26,7 @@ public class Peli {
 				tulosta("1 anna XP \n"
 						+ "2 tulosta hahmo \n"
 						+ "3 avaa lootbox \n"
+						+"4 taistele \n"
 						+ "10 lopeta");
 				String y = lukija.nextLine();
 				switch(y) {
@@ -40,6 +44,19 @@ public class Peli {
 						b.arvoBoxi();
 						b.tulostaBoxi();
 						break;
+					case "4":
+						Hahmo v = new Hahmo();
+						v.luoAuto();
+						Taistelu battle = new Taistelu(testi, v);
+						battle.taistele();
+						break;
+					case"5":
+						int k=0;
+						while(k<tarina.size()) {
+							tulosta(tarina.get(k));
+							k ++;
+						}
+							
 					case "10":
 						j = 1;
 						break;
@@ -49,110 +66,225 @@ public class Peli {
 				}
 				
 				
-				
-				
-				
-				
-				
-				
 				break;
 				
 				default:
 				
 				
 
-		
-		
-		
 		Hahmo hahmo = new Hahmo();
-		tulosta("Askarta. \n");
-		tulosta("Tämä läntinen maanosa tunnetaan sen lukuisista vuorista ja mainiosta vuohenjuustosta, \n"
-				+ "jos silmiäsi ja erästä matkakumppaniasi on yhtään uskominen.\n"
-				+ "Kuukausien vankeus on selkeästi tehnyt tehtävänsä. \n"
-				+ "Matkakumppanisi sepittää tarinaa Askartan historiasta ja sen nykyisestä poliittisesta ilmapiiristä, \n"
-				+ "mutta nämä asiat eivät sinua juuri kiinnosta. \n"
-				+ "Aistisi janoavat jotain muuta, jotain parempaa – kuin kylmä selli ja vanhentunut leipä.\n" 
-				+ "Olet edelleen vanki”, muistutat itsellesi.");
+		
+		//nimenvalinta
+		
+		int edistys = 0;
+		while(edistys < 10) {
+			tulosta(tarina.get(edistys));
+			edistys ++;
+		}
 		lukija.nextLine();
-		tulosta("Askartan majesteettiset vuoristot saavat sinut unohtamaan, \n"
-				+ "edes pieneksi hetkeksi, oman vankeutesi. Etkä ole enää istumassa kylmässä sellissäsi,\n"
-				+ "laskemassa päiviä kunnes sinulle lausutaan lopullinen tuomiosi.\n"
-				+ "Eteläinen vankileirien saaristo, sinne olet matkalla Helevurnen kuningaskunnan vuokraamassa ilma-aluksessa.\n"
-				+ "Siirryt kylmästä sellistä toiseen,\n"
-				+ "mutta tällä kertaa sinun ei tarvitse laskea päiviä tai odottaa tuomiota - tulet viettämään siellä loppuikäsi.");
+		
+		while(edistys < 26) {
+			tulosta(tarina.get(edistys));
+			edistys ++;
+		}
+		lukija .nextLine();
+		
+		while(edistys < 34) {
+			tulosta(tarina.get(edistys));
+			edistys ++;
+		}
 		lukija.nextLine();
-		tulosta("Tätä keskikokoista, jokseenkin vanhahkoa, ilma-asusta operoivat pienet, vihreänkellertävät peikot."
-				+ "He ovat tunnetusti taitavia insinöörejä, \n"
-				+ "mutta maailman ja sen historian mittakaavassa kyseessä on varsin mitätön rotu. \n"
-				+ "Peikot ahertavat taukoamatta ja suurella huolella. \n"
-				+ "He eivät juurikaan välitä ilma-aluksen ”rahdista”,\n"
-				+ "mutta he tietävät, että epäonnistuminen tässä tehtävässä voi helposti johtaa heidän vaatimattoman rotunsa tuhoon. \n"
-				+ "Näin kävi haltijoille, kun heidän diplomaattinsa holtittomasti mainitsi Helevurnen kuninkaan pakenevasta hiusrajasta.\n"
-				+ "Kuninkaan viha, varsinkin muita rotuja kohtaan, on varsin legendaarinen.");
+		
+		while(edistys < 38) {
+			tulosta(tarina.get(edistys));
+			edistys ++;
+		}
 		lukija.nextLine();
-		tulosta("”… ja sen hovinarrin läppä oli sitä tasoa, et Askartan herttuatar kuoli nauruun, hya hya hyaaah!” \n"
-				+ "Tämä aasinomainen nauru kääpiön suusta kuului matkakumppanillesi, \n"
-				+ "joka oli vihdoin ja viimein saanut tarinansa päätökseen.\n"
-				+ "”Hyaaah, ai et ku teki eetvarttia puhua jollekin muulle kuin sellin seinille! \n"
-				+ "Ei mulla niitä mitään vastaan ole, hyviä kuuntelijoita kaikki neljä, hya hya hyaaah!” \n"
-				+ "Nyökkäsit, vaikka kuuntelemisen taidoissa sellin seinät taisivat viedä voiton aika selkeästi.");
-		lukija.nextLine();
-		tulosta("”No mä olen höpöttämiseni höpottänyt, joten annetaan sullekin suunvuoro. \n"
-				+ "Mä jatkaisin muuten, mut pidempi tarinointi vaatii vähän suun kostuketta,\n"
-				+ "EIKÄ SITÄ TARJOTA TÄÄLLÄ POLIITTISILLE VANGEILLE!”");
-		lukija.nextLine();		
-		tulosta("”Nii, mikäs sun nimi olikaan?”\n");
 		
 		hahmo.valitseNimi();
+		tarina = korvaaTarinasta(tarina, ";", hahmo.getNimi());
 		
-		tulosta("\nKääpiö yrittää kätellä sinua, ilmeisesti unohtaen, että hänen kätensä ovat edelleen sidotut.\r\n" 
-				+ "”Hya hya hyaaah! Kato ny, mitä nämä kopoltinperseet on tehny meille, \n"
-				+ "varsinkin MULLE, JOKA ON EDELLEEN POLIITTINEN VANKI, \n"
-				+ "JOLTA ON NYT MYÖS EVÄTTY MAHDOLLISUUS NOUDATTAA PYHIÄ KÄÄPIÖPERINTEITÄ!” \n"
-				+ "Katselet ympärillesi ja odotat (ehkä jopa toivot), että vartija hiljentäisi hänet, \n"
-				+ "mutta he eivät ole ollenkaan liikuttuneita. Luultavasti ovat jo tottuneet kääpiötoverisi mielenpurkauksiin.");
+		
+		//rodunvalinta
+		edistys = 40;
+		while(edistys < 48) {
+			tulosta(tarina.get(edistys));
+			edistys ++;
+		}
 		lukija.nextLine();
-		tulosta("”Hya hya, vai että " +  hahmo.getNimi() +"! \n"
-				+ "Hei, ny ku mä katon sua vähän tarkemmin… \n"
-				+ "Roknarin pyhän takkuisen parran kautta… sähän oot…”\n");
+		
+		while(edistys < 50) {
+			tulosta(tarina.get(edistys));
+			edistys ++;
+		}
+		lukija.nextLine();
 		
 		hahmo.valitseRotu("rodut.txt");
 		
-		tulosta("”Sähän oot " + hahmo.getRotu() + "!”");
-		tulosta("Kääpiö hiljenee vähäksi aikaa, mutta avaa taas suunsa ennen pitkää:\n"
-				+ "”No " + hahmo.getNimi() + ", mistä jäit kii? Kuka vasikoi? \n"
-				+ "Onks vasikalla kirves nii syvällä päässä, et ainoastaan joku legendaarinen sankari voi repiä sen irti? \n"
-				+ "Mä oon EDELLEEN POLIITTINEN VANKI… mut entäs sä?”\n");
+		switch(hahmo.getRotu()) {
+			case "Ihminen":
+				edistys = 53;
+				break;
+			case "Haltija":
+				edistys = 57;
+				break;
+			case "Jotun":
+				edistys = 61;
+				break;
+		}
+		
+		tarina = korvaaTarinasta(tarina, "£", hahmo.getRotu().toLowerCase());
+		
+		tulosta(tarina.get(edistys));
+		edistys ++;
+		tulosta(tarina.get(edistys));
+		edistys ++;
+		tulosta(tarina.get(edistys));
+		
+		
+		//luokanvalinta
+		
+		edistys = 65;
+		while(edistys < 68) {
+			tulosta(tarina.get(edistys));
+			edistys ++;
+		}
+		lukija.nextLine();
 		
 		hahmo.valitseLuokka("luokat.txt");
-		tulosta("”Olet " + hahmo.getLuokka() + "!”");
+		String ase = "";
+		switch(hahmo.getLuokka()) {
+		case "Soturi":
+			edistys = 69;
+			ase = "Miekka";
+			break;
+		case "Tarkka-ampuja":
+			edistys = 73;
+			ase = "Kivääri";
+			break;
+		case "Velho":
+			edistys = 77;
+			ase = "Sauva";
+			break;
+		}
+		tarina = korvaaTarinasta(tarina,"#", ase);
 		
-		int i = 0;
-		while(i == 0) {
-			tulosta("(1) Avaa lootBox\n"
-					+ "(2) Lopeta");
-			
-			String valinta = lukija.nextLine();
+		tulosta(tarina.get(edistys));
+		edistys ++;
+		tulosta(tarina.get(edistys));
+		edistys ++;
+		tulosta(tarina.get(edistys));
+		tulosta(tarina.get(81));
+		
+		edistys = 82;
+		while(edistys < 91) {
+			tulosta(tarina.get(edistys));
+			edistys ++;
+		}
+		lukija.nextLine();
+		
+		while(edistys < 115) {
+			tulosta(tarina.get(edistys));
+			edistys ++;
+		}
+		lukija.nextLine();
+
+		
+		while(edistys < 119) {
+			tulosta(tarina.get(edistys));
+			edistys ++;
+		}
+		lukija.nextLine();
+		
+		while(edistys < 123) {
+			tulosta(tarina.get(edistys));
+			edistys ++;
+		}
+		lukija.nextLine();
+		
+		tulosta(tarina.get(124));
+		tulosta(tarina.get(128));
+		tulosta(tarina.get(131));
+		
+		int k = 0;
+		while(k == 0) {
+			String valinta = valitse();
 			switch(valinta) {
-				case "1":
-					LootBox boxi = new LootBox("Esineet.txt");
-					boxi.arvoBoxi();
-					boxi.tulostaBoxi();
+				case"1":
+					tulosta(tarina.get(125));
+					tulosta(tarina.get(126));
+					k = 1;
 					break;
-				case "2":
-					i = 1;
+				case"2":
+					tulosta(tarina.get(129));
+					k = 1;
+					break;
+				case"3":	
+					tulosta(tarina.get(132));
+					k = 1;
 					break;
 				default:
-					tulosta("virheellinen valinta");
-			}
-		}
-		tulosta("THE END....");
+					tulosta("Virheellinen valinta");
+			}//switch
+		}//while
 		
-		}	
+		edistys = 133;
+		
+		while(edistys < 138) {
+			tulosta(tarina.get(edistys));
+			edistys ++;
+		}
+		lukija.nextLine();
+		
+		while(edistys < 142) {
+			tulosta(tarina.get(edistys));
+			edistys ++;
+		}
+		lukija.nextLine();
+		
+		while(edistys < 147) {
+			tulosta(tarina.get(edistys));
+			edistys ++;
+		}
+		lukija.nextLine();
+		
+		while(edistys < 152) {
+			tulosta(tarina.get(edistys));
+			edistys ++;
+		}
+		lukija.nextLine();
 	}
+}
 	
 	public static void tulosta(String lause) {
 		System.out.println(lause);
+	}
+	
+	public static String valitse() {
+		tulosta("============================================\n");
+		tulosta("Tee valinta: ");
+		String valinta = lukija.nextLine();
+		tulosta("============================================\n");
+		return valinta;
+	}
+	
+	public static ArrayList<String> lueTiedosto(String tiedosto) throws FileNotFoundException {
+		Scanner l = new Scanner(new File(tiedosto));
+		ArrayList<String> tarina = new ArrayList<>();
+		while(l.hasNext()) {
+			tarina.add(l.nextLine());
+		}
+		l.close();
+		return tarina;
+	}
+	
+	public static ArrayList<String> korvaaTarinasta(ArrayList<String> tarina, String a, String b) {
+		ArrayList<String> korvattu = new ArrayList<>();
+		
+		for(int i = 0; i < tarina.size(); i ++) {
+			korvattu.add(tarina.get(i).replaceAll(a,b));
+		}
+		return korvattu;
 	}
 	
 }

@@ -1,34 +1,34 @@
 
 public class Esine {
 	private String nimi;
-	private int voima;
-	private int nopeus;
-	private int taika;
+	private int att;
+	private int spe;
+	private int def;
 	
 	
-	public Esine(String nimi, int voima, int nopeus, int taika) {
+	public Esine(String nimi, int att, int spe, int def) {
 		this.nimi = nimi;
-		this.voima = voima;
-		this.nopeus = nopeus;
-		this.taika = taika;
+		this.att = att;
+		this.spe = spe;
+		this.def = def;
 		
 	}
 	public void tulostaEsine() {
 		System.out.println("Nimi: " + nimi);
-		System.out.println("Voima: +" + voima);
-		System.out.println("Nopeus: +" + nopeus);
-		System.out.println("Taika: +" + taika + "\n");
+		System.out.println("Hyökkäys: +" + att);
+		System.out.println("Nopeus: +" + spe);
+		System.out.println("Puolustus: +" + def + "\n");
 	}
 	
-	public int getTaika() {
-		return taika;
+	public int getDef() {
+		return def;
 	}
 	
-	public int getVoima() {
-		return voima;
+	public int getAtt() {
+		return att;
 	}
 	
-	public int getNopeus() {
-		return nopeus;
+	public int getSpe() {
+		return spe;
 	}
 }

@@ -1,0 +1,153 @@
+Askarta.
+1
+Tämä läntinen maanosa tunnetaan sen lukuisista vuorista ja mainiosta vuohenjuustosta,
+jos silmiäsi ja erästä matkakumppaniasi on yhtään uskominen.
+Kuukausien vankeus on selkeästi tehnyt tehtävänsä.
+Matkakumppanisi sepittää tarina
+Askartan historiasta ja sen nykyisestä poliittisesta ilmapiiristä,
+mutta nämä asiat eivät sinua juuri kiinnosta. Aistisi janoavat jotain muuta,
+jotain parempaa – kuin kylmä selli ja vanhentunut leipä.
+”Olet edelleen vanki”, muistutat itsellesi.
+10
+Askartan majesteettiset vuoristot saavat sinut unohtamaan,
+edes pieneksi hetkeksi, oman vankeutesi. Etkä ole enää istumassa kylmässä sellissäsi,
+laskemassa päiviä kunnes sinulle lausutaan lopullinen tuomiosi. 
+Eteläinen vankileirien saaristo, sinne olet matkalla Helevurnen kuningaskunnan vuokraamassa ilma-aluksessa.
+Siirryt kylmästä sellistä toiseen,
+mutta tällä kertaa sinun ei tarvitse laskea päiviä tai odottaa tuomiota - tulet viettämään siellä loppuikäsi.
+Tätä keskikokoista, jokseenkin vanhahkoa, ilma-alusta operoivat pienet, vihreänkellertävät peikot. 
+He ovat tunnetusti taitavia insinöörejä,
+mutta maailman ja sen historian mittakaavassa kyseessä on varsin mitätön rotu.
+Peikot ahertavat taukoamatta ja suurella huolella. 
+He eivät juurikaan välitä ilma-aluksen ”rahdista”, mutta he tietävät, 
+että epäonnistuminen tässä tehtävässä voi helposti johtaa heidän vaatimattoman rotunsa tuhoon.
+Näin meinasi käydä haltijoille,
+kun heidän diplomaattinsa holtittomasti mainitsi Helevurnen kuninkaan pakenevasta hiusrajasta. 
+Kuninkaan viha, varsinkin muita rotuja kohtaan, on varsin legendaarinen.
+26
+”… ja lohkare murskas Svarrin! Mähän sanoin, ettei se sitä jaksaa kantaa yksin, hyah hyah hyaaaah!” 
+Tämä aasinomainen nauru kääpiön suusta kuului matkakumppanillesi,
+joka oli vihdoin ja viimein saanut tarinansa päätökseen.
+”Hyaaah, ai et ku teki eetvarttia puhua jollekin muulle kuin sellin seinille!
+Ei mulla niitä mitään vastaan ole, hyviä kuuntelijoita kaikki neljä,
+hya hya hyaaah!” Nyökkäsit, 
+vaikka kuuntelemisen taidoissa sellin seinät taisivat viedä voiton aika selkeästi.
+34
+”No mä olen höpöttämiseni höpottänyt, joten annetaan sullekin suunvuoro.
+Mä jatkaisin muuten, mut pidempi tarinointi vaatii vähän suun kostuketta,
+EIKÄ SITÄ TARJOTA TÄÄLLÄ POLIITTISILLE VANGEILLE! Nii, mikäs sun nimi olikaan?”
+38
+[nimen valinta]
+40
+Kääpiö yrittää kätellä sinua, ilmeisesti unohtaen, että hänen kätensä ovat edelleen sidotut.
+”Hya hya hyaaah! Kato ny, mitä nämä kopoltinperseet on tehny meille,
+varsinkin MULLE, JOKA ON EDELLEEN POLIITTINEN VANKI, 
+JOLTA ON NYT MYÖS EVÄTTY MAHDOLLISUUS NOUDATTAA PYHIÄ KÄÄPIÖPERINTEITÄ!” 
+Et ole kovin varma siitä käykö kättely ”pyhistä kääpiöperinteistä”, 
+mutta nyökkäät ja toivot, että hän pitäisi suunsa kiinni ennen kuin vartijat heittävät hänet ilma-aluksesta.
+Tai edes laittaisi volyymia hiljaisemmalle.
+48
+”Hya hya, vai että ;! Hei, ny ku mä katon sua vähän tarkemmin… Roknarin pyhän takkuisen parran kautta… sähän oot…”
+50
+[rotuvalinta]
+52
+”Jaa, tavallinen ihminenhän sähän oot. 
+Mielenkiintosta, hänen majesteettinsa lordi Helevurne ei siis vangitse pelkän rodun perusteel…”
+”Rangaistavia löytyy joka lähtöön Helevurnessa, nykyisestä rotukonfliktista riippumatta”, vastasit.
+56 
+”Haltija? Hyah hyah hyaaaah! Luulin, 
+et teidät oltais kaikki pistetty jo pois päiviltä!”
+”Hmph, aurinko ei ole vielä täysin laskenut meidän osalta”, vastasit.
+60
+”Jösses! Oikea jotun! Olis munha pitäny arvata, 
+ku sä viet näin paljon tilaa meijän penkistä, hyah hyah!”
+”Hah, pahoitteluni arvon kääpiö”, vastasit.
+64
+Kääpiö hiljenee vähäksi aikaa, mutta avaa taas suunsa ennen pitkää:
+”No ;, mistä jäit kii? Kuka vasikoi? Onks vasikalla kirves nii syvällä päässä, et ainoastaan joku 
+legendaarinen sankari voi repiä sen irti? Mä oon EDELLEEN POLIITTINEN VANKI… mut entäs sä?”
+68
+”Minut värvättiin armeijaan Helevurnen pohjoisen kampanjan aikana. 
+Taistelin eturintamassa ja sain paljon kunniaa. 
+Eräänä päivänä minut luokiteltiin rintamakarkuriksi ja vangittiin, nyt istun tässä.” [Soturi]
+72
+”Olin tarkka-ampuja Helevurnen pohjoisessa kampanjassa.
+Tehtävänäni oli suojella prikaatinkenraalia, mutta hän kuoli juostessaan miinaan.
+Taistelun jälkeen minut vangittiin, nyt istun tässä.” [Tarkka-ampuja]
+76
+”Tein… akateemisia tutkimuksia… Helevurnen pohjoisen kampanjan aikana.
+Tämä tuli valitettavasti päätökseen, kun puolet leiristä katosi pienen räjähdyksen yhteydessä.
+Viranomaiset pitivät minua vastuullisena siitä ja vangitsivat minut, nyt istun tässä.” [Velho]
+80
+Kääpiö hiljeni taas vähäksi aikaa.
+82
+”Pohjoinen kampanja… ei tainnu ainutkaan meikäläisistä ottaa osaa siihen. 
+Meillä on ollu oma projekti käynnissä täällä Askartassa jo jonkun aikaa”, kääpiö totesi ennen pitkää.
+”Oma projekti?”, kyselit hieman skeptisenä.
+”Pienehkö varoituksen sana täs vaihees £… 
+meidän laskusta voi tulla melkosen pomppuinen. Kato jo valmiiks, mistä otat kiinni,
+ja jos sattumalt löydät jonkun aseen, aina parempi.”
+Kääpiö oli juuri saanut tämän sanotuksi, kun kuulit kahden ilma-aluksen lähestyvän takaapäin. 
+Ne olivat äänestä päätellen pienempiä kuin ilma-alus, jossa nyt istuit.
+91
+Vartijat nousivat seisomaan ja huusivat ohjeita peikoille: 
+”Kääpiöpartio! Laskekaa ilma-alus lähemmäs maata ja suunnatkaa kohti Amsvartnir-järveä!” 
+Peikot tekivät työtä käskettyä, mutta heidän toimintaa sävytti lievä tragikoomisuus. 
+Yksi saneli rukouksia muutamalle sadalle peikkojumalalle, 
+toinen pureskeli jakoavainta hyvinkin hermostuneesti.
+Tämä hermostuneisuus kostautui pahemman kerran: 
+peikkojen ohjaama ilma-alus pudotti korkeutta liian nopeasti ja menetti paljon arvokasta kontrollia, 
+jonka kääpiöpartio käytti häikäilemättömästi hyväkseen. 
+Muutama hyvin tähdätty laukaus konekivääreistä tekivät moottorista selvää 
+ja ilma-alus oli nyt auttamattomasti lähestymässä maankamaraa.
+”Hyah, hyah, hyaaaaah! Nonii, pidä tukevasti kiinni ;! Nyt rytisee!”
+Niin rytisi. Pudotus oli raju, mutta jumalille kiitos, olit hengissä. 
+Jos vartijat eivät olisi käskeneet peikkojen laskemaan ilma-alusta, lopputulos olisi voinut olla toinen. 
+Putoamisen yhteydessä kahleet olivat irronneet oikeasta kädestäsi, 
+nyt ne vain roikkuivat ikävästi koko painollansa vasemmasta. 
+Katselit hetken aikaa ympärillesi, yrittäen samalla selvittää päätäsi. 
+Et meinannut aluksi tunnistaa missä olit, 
+mutta peikkojen ruumiit, tuhoutuneet mittarit ja polttoaineen haju varmistivat sinulle, 
+että matka kohti eteläistä vankileirien saaristoa ei ollut mikään päiväuni. 
+Olit Helevurnen kuningaskunnan vuokraaman ilma-aluksen raadossa. 
+Se ei ollut ehjänä mikään luksusjahti, mutta nyt…
+Näit silmäkulmastasi jotain, minkä tunnistit välittömästi. #! 
+Matkakumppanisi oli maininnut jotain aseen löytämisestä… missä hän muuten oli?
+115
+Kuulit tutun aasinomaisen naurun ilma-aluksen ulkopuolelta ja ryömisit vaistonomaisesti sitä kohti.
+”Hyah, hyah, hyaaaaah! Ei niin helpolla, Helevurne! Ei niin helpolla! 
+Luulitko tosissas, et kääpiöiden pääarkkitehti sysätään jonnekin vankileiriin ilman minkäänlaist vastarintaa?”
+119
+Astuit ulos ilma-aluksesta hieman huterin jaloin. 
+Kääpiön ilme kirkastui entisestään: 
+”Hyah! Säkin selvisit! Totta kai selvisit, äijä on veteraani ja melkein yhtä kovaa tekoa kuin mä! Aaagh…”
+123
+124 (1) ”Oletko kunnossa?”
+125 ”Älä sä musta huoli, muutama kylkiluu taitaa olla poikki… hyah, hyah, hyaaaah! 
+126 Mut nehän kasvaa takaisin, eikös vain?”, kääpiö vastasi.
+127
+128 (2) ”Uskon, että olet selityksen velkaa minulle.”
+129 ”Niinhän mä taidan olla, mutta kaikki ajallaan, kaikki ajallaan ;”, kääpiö vastasi.
+130
+131 (3) ”…”
+132 ”Ei sun tarvi enää tuppisuuna siinä seistä, kohtaloosi tyytyneenä. Me ollaan vapaita, hei! Hyah hyah hyaaah!”, kääpiö nauroi.
+133
+”Se… is! Helevurnen kuningaskunnan… nimessä… seis!”
+Kivulias ääni kuului yhdelle vartijoista, joka oli ilmeisesti selvinnyt pudotuksesta. 
+Loukkaantumisesta huolimatta hän oli päättänyt suorittaa tehtävänsä katkeraan loppuun saakka
+ja seisoi nyt sinun ja vapauden tiellä.
+138
+”Kyl on lojaali kaveri, ei ihan sitä, mitä oisin oottanut Helevurnen kätyriltä.
+Haluatko sä hoitaa tämän? Auttaisin muuten, mut mul on hieman alaston tunne ilman omaa kirvestäni… 
+me ei päästä täält pois niin kauan, kun hän seisoo tuossa”
+142
+Hetken tuumailtuasi tulit samaan lopputulokseen. 
+Vartija oli valmis taistelemaan ja hänen silmistään näki, ettei järkipuhe tepsisi häneen. 
+Jollain tasolla arvostit hänen lojaaliuttansa ja tahdonvoimaansa, 
+mutta häviäminen hänelle tarkoittaisi paluuta vankityrmään tai matalaa hautaa Askartan viheriöllä, kaukana kotoa…
+147
+Ei ollut muuta vaihtoehtoa. Otit tiukan otteen aseestasi ja toivoit, 
+että kuukausien vankeus ei ollut vienyt sinulta tarvittavaa voimaa selvitä tästä haasteesta.
+150
+[taistelu vartijaa vastaan]
+...

@@ -2,40 +2,40 @@
 public class Tyyppi {
 	private String tyyppi;
 	private String nimi;
-	private int voima;
-	private int nopeus;
-	private int taika;
+	private int att;
+	private int spe;
+	private int def;
 	
 	public Tyyppi(String tyyppi, String nimi, int voima, int nopeus, int taika) {
 		this.tyyppi = tyyppi;
 		this.nimi = nimi;
-		this.voima = voima;
-		this.nopeus = nopeus;
-		this.taika = taika;
+		this.att = voima;
+		this.spe = nopeus;
+		this.def = taika;
 	}
 	
-	public String returnNimi() {
+	public String getNimi() {
 		return nimi;
 	}
 	
-	public int returnVoima() {
-		return voima;
+	public int getAtt() {
+		return att;
 	}
 	
-	public int returnNopeus() {
-		return nopeus;
+	public int getSpe() {
+		return spe;
 	}
 	
-	public int returnTaika() {
-		return taika;
+	public int getDef() {
+		return def;
 	}
 	
 	public void tulostaTiedot() {
 		tulosta("=========================\n");
 		tulosta(tyyppi + ": " + nimi);
-		tulosta("Voima: +" + voima);
-		tulosta("Nopeus: +" + nopeus);
-		tulosta("Taika: +" + taika + "\n");
+		tulosta("Hyökkäys: +" + att);
+		tulosta("Nopeus: +" + spe);
+		tulosta("Puolustus: +" + def + "\n");
 	}
 	
 	public void tulosta(String lause) {

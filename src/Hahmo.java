@@ -4,9 +4,9 @@ import java.io.*;
 public class Hahmo {
 	private Scanner lukija;
 	private String nimi;
-	private int voima;
-	private int nopeus;
-	private int taika;
+	private int att;
+	private int spe;
+	private int def;
 	private int hp;
 	private int maxHp;
 	private int rahat;
@@ -17,6 +17,7 @@ public class Hahmo {
 	private Esine[] esineet;
 	private Tyyppi luokka;
 	private Tyyppi rotu;
+	private Isku[] iskut;
 	
 	
 	public Hahmo() {
@@ -24,9 +25,9 @@ public class Hahmo {
 		this.nimi = null;
 		this.luokka = null;
 		this.rotu = null;
-		this.voima = 0;
-		this.nopeus = 0;
-		this.taika = 0;
+		this.att = 0;
+		this.spe = 0;
+		this.def = 0;
 		this.hp = 10;
 		this.maxHp = 10;
 		this.lvl = 1;
@@ -34,6 +35,7 @@ public class Hahmo {
 		this. maxXp = 1000;
 		this.kokemus = 0;
 		this.esineet = new Esine[5];
+		this.iskut = new Isku[4];
 		
 	}
 	
@@ -44,15 +46,15 @@ public class Hahmo {
 			tulosta("============================================\n");
 			tulosta("Valitse rotu");
 			for(int i = 0; i < rodut.returnLista().size(); i ++) {
-				tulosta("(" + (i+1) + ") " + rodut.returnLista().get(i).returnNimi());
+				tulosta("(" + (i+1) + ") " + rodut.returnLista().get(i).getNimi());
 			}
 			tulosta("(10) Tulosta rotutiedot");
 			int valinta = Integer.parseInt(lukija.nextLine());
 			if(valinta > 0 && valinta <= rodut.returnLista().size()) {
 				rotu = rodut.returnLista().get(valinta - 1);
-				voima += rodut.returnLista().get(valinta - 1).returnVoima();
-				nopeus += rodut.returnLista().get(valinta - 1).returnNopeus();
-				taika += rodut.returnLista().get(valinta - 1).returnTaika();
+				att += rodut.returnLista().get(valinta - 1).getAtt();
+				spe += rodut.returnLista().get(valinta - 1).getSpe();
+				def += rodut.returnLista().get(valinta - 1).getDef();
 			} else if(valinta == 10) {
 				for(int i = 0; i < rodut.returnLista().size(); i ++) {
 					rodut.returnLista().get(i).tulostaTiedot();
@@ -68,6 +70,10 @@ public class Hahmo {
 		rotu = new Tyyppi("Rotu","Testi",1,1,1);
 		luokka = new Tyyppi("Luokka","Testi",0,0,0);
 		nimi = "Nimi";
+		iskut[0] = new Isku("Lyönti", 2,2,2, "null","null");
+		iskut[1] = new Isku("Potku", 3,3,3, "null","null");
+		iskut[2] = new Isku("Pieru", 3,3,3, "null","null");
+		iskut[3] = new Isku("Lyönti", 2,2,2, "testi","testi");
 	}
 	
 	public void valitseLuokka(String tiedosto) throws FileNotFoundException {
@@ -77,15 +83,15 @@ public class Hahmo {
 			tulosta("============================================\n");
 			tulosta("Valitse luokka");
 			for(int i = 0; i < luokat.returnLista().size(); i ++) {
-				tulosta("(" + (i+1) + ") " + luokat.returnLista().get(i).returnNimi());
+				tulosta("(" + (i+1) + ") " + luokat.returnLista().get(i).getNimi());
 			}
 			tulosta("(10) Tulosta luokkatiedot");
 			int valinta = Integer.parseInt(lukija.nextLine());
 			if(valinta > 0 && valinta <= luokat.returnLista().size()) {
 				luokka = luokat.returnLista().get(valinta - 1);
-				voima += luokat.returnLista().get(valinta - 1).returnVoima();
-				nopeus += luokat.returnLista().get(valinta - 1).returnNopeus();
-				taika += luokat.returnLista().get(valinta - 1).returnTaika();
+				att += luokat.returnLista().get(valinta - 1).getAtt();
+				spe += luokat.returnLista().get(valinta - 1).getSpe();
+				def += luokat.returnLista().get(valinta - 1).getDef();
 			} else if(valinta == 10) {
 				for(int i = 0; i < luokat.returnLista().size(); i ++) {
 					luokat.returnLista().get(i).tulostaTiedot();
@@ -107,12 +113,13 @@ public class Hahmo {
 	public void tulostaHahmo() {
 		tulosta("============================================\n");
 		tulosta("Nimi: " + nimi);
+		tulosta("Hp: " + hp + "/" + maxHp);
 		tulosta("Lvl: " + lvl + "   " + xp + "/" + (maxXp));
-		tulosta("Rotu: " + rotu.returnNimi());
-		tulosta("Luokka: " + luokka.returnNimi());
-		tulosta("Voima: " + voima);
-		tulosta("Nopeus: " + nopeus);
-		tulosta("Taika: " + taika);
+		tulosta("Rotu: " + rotu.getNimi());
+		tulosta("Luokka: " + luokka.getNimi());
+		tulosta("Hyökkäys: " + att);
+		tulosta("Nopeus: " + spe);
+		tulosta("Puolustus: " + def);
 		tulosta("============================================\n");
 	}
 	
@@ -135,39 +142,39 @@ public class Hahmo {
 		}
 	}
 	
-	public void kehitaVoimaa(int x) {
-		voima += x;
+	public void kehitaHyokkays(int x) {
+		att += x;
 	}
 	
-	public void kehitaTaikaa(int x) {
-		taika += x;
+	public void kehitaPuolustus(int x) {
+		def += x;
 	}
 	
-	public void kehitaNopeutta(int x) {
-		nopeus += x;
+	public void kehitaNopeus(int x) {
+		spe += x;
 	}
 	
 	public void kehitaHp(int x) {
 		maxHp += x;
 	}
 	public String getRotu() {
-		return rotu.returnNimi();
+		return rotu.getNimi();
 	}
 	
 	public String getLuokka() {
-		return luokka.returnNimi();
+		return luokka.getNimi();
 	}
 	
-	public int getVoima() {
-		return voima;
+	public int getAtt() {
+		return att;
 	}
 	
-	public int getTaika() {
-		return taika;
+	public int getDef() {
+		return def;
 	}
 	
-	public int getNopeus() {
-		return nopeus;
+	public int getSpe() {
+		return spe;
 	}
 	
 	public int getHp() {
@@ -224,6 +231,51 @@ public class Hahmo {
 	
 	public void tulosta(String lause) {
 		System.out.println(lause);
+	}
+	
+	public Isku getIsku(int i) {
+		return iskut[i];
+	}
+	
+	public void tulostaIskut() {
+		for(int i = 0; i < iskut.length; i ++) {
+			tulosta(iskut[i].toString());
+		}
+	}
+	
+	public void tulostaIskuNimet() {
+		for(int i = 0; i < 4; i ++) {
+			tulosta("(" + (i+1) + ") " + iskut[i].getNimi());
+		}
+	}
+	
+	public void lisaaisku(Isku isku) {
+		int i = 0;
+		while(i < 4) {
+			if(iskut[i] == null) {
+				iskut[i] = isku;
+				break;
+			} else if(i == 3) {
+				tulosta("Valitse korvattava isku:");
+				for(int j = 0; j < 4; j ++) {
+					tulosta("(" + (j+1) + ") " + iskut[j].getNimi());
+					while(true) {
+						int syote = lukija.nextInt();
+						if(syote < 4 && syote >= 0) {
+							iskut[syote - 1] = isku;
+						} else {
+							tulosta("Virheellinen syöte");
+						}
+					}
+				}
+			} else {
+				i ++;
+			}
+		}
+	}
+	
+	public void tulostaNimiHp() {
+		tulosta(nimi + " " + hp + "/" + maxHp);
 	}
 	
 }
