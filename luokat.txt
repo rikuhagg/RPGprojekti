@@ -1,3 +1,3 @@
-Luokka;Velho;0;0;2
-Luokka;Tarkka-ampuja;0;2;0
-Luokka;Soturi;2;0;0
+Luokka;Velho;0;0;2;Loitsi;6;3;7;Kääpiö;Ihminen
+Luokka;Tarkka-ampuja;0;2;0;Ammu kiväärillä;5;2;9;Peikko;Jotun
+Luokka;Soturi;2;0;0;Lyö miekalla;6;1;8;Tarkka-ampuja;Saatana

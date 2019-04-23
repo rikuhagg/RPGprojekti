@@ -1,3 +1,3 @@
-Rotu;Jotun;3;1;2
-Rotu;Haltija;2;3;1
-Rotu;Ihminen;1;2;3;
+Rotu;Jotun;3;1;1;Jotun rotuisku;7;1;6;Haltija;Kääpiö
+Rotu;Haltija;2;3;2;Haltija rotuisku;4;5;8;Lisko;Ihminen
+Rotu;Ihminen;1;2;3;Ihminen rotuisku;6;2;8;Velho;Jotun

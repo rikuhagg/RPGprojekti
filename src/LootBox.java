@@ -1,12 +1,21 @@
 import java.util.*;
 import java.io.*;
 
+/**
+ * Tämä Luokka kuvaa lootbocia, joka arpoo käyttäjälle kolme satunnaista esinettä.
+ * @author Riku
+ *
+ */
 public class LootBox {
 	public ArrayList<Esine> esineet;
 	public Random r;
 	Esine[] arvotut;
 	
-	
+	/**
+	 * Tämä konstruktori luo uuden esine-tyyppisen listan parametrinä annetun tiedoston sisällöstä.
+	 * @param tiedosto tiedosto, josta lista luodaan.
+	 * @throws FileNotFoundException
+	 */
 	public LootBox(String tiedosto) throws FileNotFoundException {
 		this.esineet = new ArrayList<>();
 		this.r = new Random();
@@ -29,6 +38,9 @@ public class LootBox {
 		}
 	}
 	
+	/**
+	 * Tämä metodi sekoittaa ja arpoo konstruktorissa luodusta listasta kolme esinettä ja tallentaa ne omaan taulukkoon.
+	 */
 	public void arvoBoxi() {
 		Collections.shuffle(esineet);
 		arvotut[0] = esineet.get(r.nextInt(500));
@@ -36,6 +48,18 @@ public class LootBox {
 		arvotut[2] = esineet.get(r.nextInt(500));
 	}
 	
+	/**
+	 * Tämä metodi palauttaa taulukosta parametrinä annetun esineen tiedot
+	 * @param i halatun esineen indeksi
+	 * @return haluttu esine
+	 */
+	public Esine getEsine(int i) {
+		return arvotut[i];
+	}
+	
+	/**
+	 * Tämä metodi tulostaa näytölle arvotut esineet.
+	 */
 	public void tulostaBoxi() {
 		tulosta("\n============================================\n");
 		tulosta("Onneksi Olkoon! Voitit seuraavat esineet: \n");
@@ -44,11 +68,6 @@ public class LootBox {
 		arvotut[2].tulostaEsine();
 		tulosta("\n============================================\n");
 	}
-	
-	public Esine palautaEsine(int i) {
-		return arvotut[i];
-	}
-	
 	
 	private void tulosta(String lause) {
 		System.out.println(lause);
