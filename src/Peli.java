@@ -241,7 +241,7 @@ public class Peli {
 	 * @throws FileNotFoundException
 	 */
 	public static Lista getLuokat() throws FileNotFoundException {
-		Lista luokat = new Lista("Rodut.txt");
+		Lista luokat = new Lista("luokat.txt");
 		return luokat;
 	}
 
@@ -252,7 +252,7 @@ public class Peli {
 	 * @throws FileNotFoundException
 	 */
 	public static Lista getRodut() throws FileNotFoundException {
-		Lista rodut = new Lista("Rodut.txt");
+		Lista rodut = new Lista("rodut.txt");
 		return rodut;
 	}
 
